@@ -1,281 +1,248 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1"/>
-        <title>Tayyab | Full Stack Web Developer</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="fav.png">
-        <script defer="defer" src="java.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navigation-bar">
-            <ul class="navigation">
-                <li class="navigation__item navigation__item--active" id="nav-hero">
-                    <a href="#hero">Home</a>
-                </li>
-                <li class="navigation__item" id="nav-about">
-                    <a href="#about">About</a>
-                </li>
-                <li class="navigation__item" id="nav-projects">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="navigation__item" id="nav-contact">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="hero" id="hero">
-            <div class="canvas">
-                <canvas class="connecting-dots"></canvas>
-            </div>
-            <div class="heading">
-                <div class="heading__line-1">
-                    Hello, I'm <span>Tayyab.</span>
-                    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Tayyab Dev Pro Porfolio || Front End Web Developer</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer="defer" src="index.js"></script>
+</head>
+<body>
+    <div id="root">
+        <nav>
+        <h3 class="logo">Tayyab Dev Pro</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="my cv/index.pdf">Resume</a></li>
+
+            <li>
+                <button class="mobile-menu" style="background-color: rgba(255, 255, 255,0) ; border: none;"><i class="fa-solid fa-bars"></i></button>
+        </li>
+    </ul>
+    </nav>
+    <div class="mobile-nav closed-menu">
+        <span >
+            <button class="close-menu" style="background-color: white; border: none; font-size: 3rem;"><i class="fa-solid fa-xmark"></i></button>
+            
+        </span>
+                    <ul><li><a href="#home"><i class="fa-solid fa-house" style="padding-right: 23px;"></i> Home</a></li>
+                        <li><a href="#about"><i class="fa-regular fa-address-card" style="padding-right: 23px;"></i> About</a></li>
+                        <li><a href="#projects"><i class="fa-solid fa-diagram-project" style="padding-right: 10px;"></i> Projects</a></li>
+                        <li><a href="#contact"><i class="fa-regular fa-address-book" style="padding-right: 10px;"></i> Contact</a></li>
+                        <li><a href="my cv/index.pdf"><i class="fa-solid fa-user" style="padding-right: 10px;"></i> Resume</a></li>
+                    </ul>
                 </div>
-                <div class="heading__line-2">I'm a full stack web developer.</div>
-                <a href="#about" class="heading__link">
-                    <div class="heading-cta">
-                        View my work 
-                        <svg class="heading__arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <title>arrow-right</title>
-                            <path d="M11.293 5.707l5.293 5.293h-11.586c-0.552 0-1 0.448-1 1s0.448 1 1 1h11.586l-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l7-7c0.092-0.092 0.166-0.202 0.217-0.324 0.101-0.245 0.101-0.521 0-0.766-0.049-0.118-0.121-0.228-0.217-0.324l-7-7c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
-                        </svg>
+                <section id="home" class="hero">
+                    <div class="container">
+                    <div class="content">
+                        <div class="hero-main">
+                            <div class="hero-text">
+                                <h1>Front-End Developer</h1>
+                                <img src="images/waving.png" alt="waving_hand">
+                                <p>Hi, I'm Muhammad Tayyab. Front-end Developer based in Punjab, Pakistan. 📍</p>
+                                <span><a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/muhammad-tayyab-1505bb340/">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/tayyabdevpro">
+                                    <i class="fa-brands fa-github"></i>
+
+                                </a>
+                                <a href="https://www.fiverr.com/users/tayyabaslam110/seller_dashboard" target="_blank" rel="noreferrer">
+                                    <i class="fa fa-fonticons"></i>
+                                </a>
+                                <a href="https://api.whatsapp.com/send/?phone=%2B923042475039&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="hero-img"></div>
                     </div>
-                </a>
+                    <div class="skills">
+                        <p>Tech Stack</p>
+                        <div class="logos">
+                            <ul>
+                                <li><img src="https://skillicons.dev/icons?i=html,css" alt="skill-icon"></li>
+                                <li><img src="https://skillicons.dev/icons?i=js,ts" alt="skill-icon"></li>
+                                <li><img src="https://skillicons.dev/icons?i=react,next" alt="skill-icon"></li>
+                                <li><img src="https://skillicons.dev/icons?i=tailwind,scss" alt="skill-icon"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about " id="about">
+            <div class="container">
+            <div class="about-content"><div class="img-side">
+                <img src="images/working.png" alt="emoji" class="work-emoji">
+                <img src="images/about.webp" alt="mee" class="img-side__main-img">
+                <span><img src="images/text.svg" alt="text"></span>
+            </div>
+            <div class="text-side">
+                <h3>About me</h3>
+                <h4>Front-end Developer <br> based in Punjab, Pakistan 📍</h4>
+                <p>Hey, my name is Tayyab, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX for my users.<br><br>My main stack currently is React/Next.js in combination with Tailwind CSS and TypeScript.</p>
             </div>
         </div>
-       
-        <div class="main-bg">
-            <div class="canvas">
-                <canvas class="canvas-2"></canvas>
+    </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+        <div class="main-container">
+          <h4 class="heading heading-sec heading-sec__mb-bg">
+            <span class="heading-sec__main">Projects</span>
+            <span class="heading-sec__sub">
+              Here you will find some of the personal and clients projects that I
+              created with each project containing its own case study
+            </span>
+          </h4>
+  
+          <div class="projects__content">
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="images/bouncing ball.png"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Ball Bouncing Game</h3>
+                <p class="projects__row-content-desc">
+                  Ball Bouncing Game is a successful Open-Source project that I created
+                  which have been featured on some of the biggest tech sites like
+                  CSS-Tricks, Hostinger,W3School etc & used by thousands of developers
+                  globally.
+                </p>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='https://tayyabdevpro.github.io/ball-bouncing-game/' target='_blank'>Live Preview</a>
+              </div>
+            </div>
+            
+             
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="images/weather.png"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Weather Application</h3>
+                <p class="projects__row-content-desc">
+                    Weather Application is the wonderful project in which we will see the weather of several country and their cities
+                    this application built with Html, CSS , JavaScript.
+                </p>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='https://tayyabdevpro.github.io/Weather-Application/' target='_blank'>Live Preview</a
+                >
+              </div>
+            </div>
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="images/boreal-coffee-clone.jpeg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Boreal Coffee Clone</h3>
+                <p class="projects__row-content-desc">
+                  I re-created the frontend of Boreal Coffee's official web app
+                  because I got attracted to their beautiful UI. It was a great
+                  experience for me to build the entire frontend.
+                </p>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='/project-3' target='_blank'>Live Preview</a
+                >
+              </div>
+            </div>
+            <div class="projects__row">
+              <div class="projects__row-img-cont">
+                <img
+                  src="images/crown-template.jpeg"
+                  alt="Software Screenshot"
+                  class="projects__row-img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="projects__row-content">
+                <h3 class="projects__row-content-title">Crown Template</h3>
+                <p class="projects__row-content-desc">
+                  Crown is a web template that I created targeting the restaurant
+                  and food industry which anyone can use to present their business
+                  online.
+                </p>
+                <a class='btn btn--med btn--theme dynamicBgClr' href='/project-4' target='_blank'>Live Preview</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section id="contact" class="contact">
+            <div class="container"><div class="contact__content">
+                <div class="contact__title">
+                    <p>contact</p>
+                    <h3>Don't be shy! Hit me up! 👇</h3>
+                </div>
+                <div class="contact__icons">
+                    <div class="contact__icon-box">
+                        <span>
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            </svg>
+                        </span>
+                        <div class="contact__info">
+                            <h3>Location</h3>
+                            <p>Punjab, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="contact__icon-box">
+                        <span>
+                            <i class="fa-sharp fa-solid fa-envelope"></i></i>
+                        </span>
+                        <div class="contact__info">
+                            <h3>Mail</h3>
+                            <a href="mailto:stefan.topallovic@gmail.com">tayyabaslam173@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <section class="about" id="about">
-            <h2 class="about__heading section-heading">About</h2>
-            <div class="about__content">
-                <div class="profile">
-                    <div class="profile__picture">
-                        
-                    </div>
-                    <p class="profile__blurb">Fully committed to the philosophy of life-long learning, I’m a full stack developer with a deep passion for JavaScript, React and all things web development. The unique combination of creativity, logic, technology and never running out of new things to discover, drives my excitement and passion for web development. When I’m not at my computer I like to spend my time reading, keeping fit and playing guitar.</p>
-                </div>
-                <div class="skills">
-                    <div class="skills__row">
-                        <div class="skills__item skills__item--html">
-                            <img src="images/html.6aa56206be02cf6404844871df1d2da6.png" alt=""/>
-                            <div class="skills__item-name">HTML</div>
-                        </div>
-                        <div class="skills__item skills__item--react">
-                            <img src="images/react.cb15bfce2a9004ce61c5f79f805b067b.png" alt=""/>
-                            <div class="skills__item-name">REACT</div>
-                        </div>
-                        <div class="skills__item skills__item--npm">
-                            <img src="images/express.1eca086d2a78b4be3dd1f0a47b84b618.png" alt=""/>
-                            <div class="skills__item-name">EXPRESS.JS</div>
-                        </div>
-                    </div>
-                    <div class="skills__row">
-                        <div class="skills__item skills__item--js">
-                            <img src="images/js.f8a28e905c78dadb79434b7ceebd52a0.png" alt=""/>
-                            <div class="skills__item-name">JAVASCRIPT</div>
-                        </div>
-                        <div class="skills__item skills__item--css">
-                            <img src="images/css.0ce0f0a2b4c4aa34b64c40e5278af3d1.png" alt=""/>
-                            <div class="skills__item-name">CSS</div>
-                        </div>
-                        <div class="skills__item skills__item--python">
-                            <img src="images/mongo.41ae1969f341d30268a13d57846efcc6.png" alt=""/>
-                            <div class="skills__item-name">MONGODB</div>
-                        </div>
-                        <div class="skills__item skills__item--git">
-                            <img src="images/git.3092b5991e8accb9e7c36817c048a8d5.png" alt=""/>
-                            <div class="skills__item-name">GIT</div>
-                        </div>
-                    </div>
-                    <div class="skills__row">
-                        <div class="skills__item skills__item--sass">
-                            <img src="images/sass.3706567f8b353c748df3850c1aabca46.png" alt=""/>
-                            <div class="skills__item-name">SASS</div>
-                        </div>
-                        <div class="skills__item skills__item--webpack">
-                            <img src="images/nextjs.ff373e2ef4f7fdf152425a8c5c30816c.png" alt=""/>
-                            <div class="skills__item-name">NEXT.JS</div>
-                        </div>
-                        <div class="skills__item skills__item--r">
-                            <img src="images/node.94a06c4b9dd29e984501e6407e77a918.png" alt=""/>
-                            <div class="skills__item-name">NODE.JS</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="projects" id="projects">
-            <h2 class="projects__heading section-heading">Projects</h2>
-            <div class="project project-left">
-                <a href="https://tayyabdevpro.github.io/Weather-Application/" target="_blank">
-                    <div class="project__image-container weather">
-                        <div class="project__image-image">
-                            <img src="images/weather.png" alt=""/>
-                        </div>
-                    </div>
-                </a>
-                <div class="project__info">
-                    <h3 class="project__title">
-                    Weather Application
-                    </h3>
-                    <p class="project__description">Front End Weather application built with Html, CSS , JavaScript.</p>
-                    <a href="https://tayyabdevpro.github.io/Weather-Application/" target="_blank">
-                        <div class="project__live-2">Live preview</div>
-                    </a>
-                    <a href="https://github.com/tayyabdevpro/Weather-Application" target="_blank">
-                        <div class="project__live-2">learn more</div>
-                    </a>
-                </div>
-            </div>
-            <div class="project project-right">
-                <div class="project__info">
-                    <h3 class="project__title">
-                        Ball Bouncing Game<br/>Game Application
-                    </h3>
-                    <p class="project__description">Awesome Game application built with Html, CSS and JavaScript.</p>
-                    <a href="https://tayyabdevpro.github.io/ball-bouncing-game/" target="_blank">
-                        <div class="project__live-2">live preview</div>
-                    </a>
-                    <a href="https://github.com/tayyabdevpro/ball-bouncing-game" target="_blank">
-                        <div class="project__live-2">learn more</div>
-                    </a>
-                </div>
-                <a href="https://nextjs-chakra-chatapp-qnhb6dq42-bscottnz.vercel.app/" target="_blank">
-                    <div class="project__image-container todo">
-                        <div class="project__image-image">
-                            <img src="images/bouncing ball.png" alt=""/>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="project project-left">
-                <a href="https://bscottnz.github.io/" target="_blank">
-                    <div class="project__image-container retro">
-                        <div class="project__image-image">
-                            <img src="images/retro.d5a0a58727affa92cb80fdfa78a07a26.png" alt=""/>
-                        </div>
-                    </div>
-                </a>
-                <div class="project__info">
-                    <h3 class="project__title">
-                        Retro-Sketch<br/>Pixel Sketch App
-                    </h3>
-                    <p class="project__description">Create pixel art with a variety of drawing tools.</p>
-                    <a href="https://bscottnz.github.io/esketch/" target="_blank">
-                        <div class="project__live-2">Live app</div>
-                    </a>
-                    <a href="https://github.com/" target="_blank">
-                        <div class="project__live-2">learn more</div>
-                    </a>
-                </div>
-            </div>
-            <div class="project project-right">
-                <div class="project__info">
-                    <h3 class="project__title">
-                         TO-DO<br/>Productivity App
-                    </h3>
-                    <p class="project__description">Keep track of tasks with custom project folders and notes.</p>
-                    <a href="https://github.com/" target="_blank">
-                        <div class="project__live-2">live app</div>
-                    </a>
-                    <a href="https://github.com/" target="_blank">
-                        <div class="project__live-2">learn more</div>
-                    </a>
-                </div>
-                <a href="https://github.com/" target="_blank">
-                    <div class="project__image-container todo">
-                        <div class="project__image-image">
-                            <img src="images/todo.af05ff37bdc5302d22530d5631e136cd.png" alt=""/>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <h2 class="contact__heading section-heading">Contact</h2>
-            <p class="contact__text">Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
-            <form class="contact__form" action="https://formspree.io/f/xdoprgpv" method="POST">
-                <input class="contact__form-name" name="name" placeholder="Name"/>
-                <input class="contact__form-email" type="email" name="_replyto" placeholder="Email"/>
-                <textarea class="contact__form-message" name="message" placeholder="Message"></textarea>
-                <div class="contact__form-error-submit">
-                    <div class="form-error">
-                        <div class="form-error__name">Please enter your name.</div>
-                        <div class="form-error__email">Please enter a valid email.</div>
-                        <div class="form-error__msg">Please enter a message.</div>
-                    </div>
-                    <button type="button" class="contact__form-submit-2 project__live-2" id="form-submit">Submit</button>
-                </div>
-            </form>
-        </section>
-        <footer class="footer">
-            <a href="#hero">
-                <div class="return-home">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 24 24">
-                        <title></title>
-                        <path fill="#fafafa" d="M17.707 10.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414zM17.707 17.293l-5-5c-0.391-0.391-1.024-0.391-1.414 0l-5 5c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l4.293-4.293 4.293 4.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414z"></path>
-                    </svg>
-                </div>
-            </a>
-            <div class="socials">
-               
-                <a href="https://www.linkedin.com/in/muhammad-tayyab-1505bb340/" target="_blank">
-                    <div class="socials__github" style="background-color: white;
-                    width: 49px;
-                    height: 49px;
-                    border-radius: 50px;"> 
-                        
-                        <i class="fa-brands fa-linkedin-in fa-3x" style="color: black; font-size: 22px;"></i>
-                    </div>
-                </a>
-                <a href="https://github.com/tayyabdevpro" target="_blank">
-                    <div class="socials__github" style="background-color: white;
-                    width: 49px;
-                    height: 49px;
-                    border-radius: 50px;"> 
-                        
-                        <i class="fa-brands fa-github fa-3x" style="color: black; font-size: 22px ;"></i>
-                    </div>
-                </a>
-                <a href="mailto:tayyabaslam173@gmail.com" target="_blank">
-                    <div class="socials__github" style="background-color: white;
-                    width: 49px;
-                    height: 49px;
-                    border-radius: 50px;"> 
-                        
-                        <i class="fa-solid fa-envelope fa-3x" style="color: black; font-size: 22px;"></i>
-                    </div>
-                </a>
-                <a href="https://www.fiverr.com/users/tayyabaslam110/seller_dashboard" target="_blank">
-                    <div class="socials__github" style="background-color: white;
-                    width: 49px;
-                    height: 49px;
-                    border-radius: 50px;"> 
-                        
-                        <i class="fa fa-fonticons" style="font-size:22px;color:black"></i>
-                    </div>
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=%2B923042475039&text&type=phone_number&app_absent=0" target="_blank">
-                    <div class="socials__github" style="background-color: white;
-                    width: 49px;
-                    height: 49px;
-                    border-radius: 50px;"> 
-                        
-                        <i class="fa-brands fa-whatsapp" style="font-size: 22px; color: black;"></i>
-                    </div>
-                </a>
-                
-            </div>
-            <p class="copyright">   TAYYAB Dev ©2024</p>
-        </footer>
-    </body>
+    </section>
+    <footer>
+        <div class="container"><div class="footerc">
+            <h3>Copyright © 2024. All rights are reserved</h3>
+            <div class="footerc__socials">
+                <a aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/muhammad-tayyab-1505bb340/">
+                    <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://github.com/tayyabdevpro">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.fiverr.com/users/tayyabaslam110/seller_dashboard" target="_blank" rel="noreferrer">
+            <i class="fa fa-fonticons" ></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=%2B923042475039&text&type=phone_number&app_absent=0" target="_blank" rel="noreferrer">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    </div>
+    </div>
+    </footer>
+    </div>
+</body>
 </html>
