@@ -334,7 +334,7 @@
   
   @media (max-width: 400px) {
     .hero-text img {
-      right: 3rem;
+      right: 0.3rem;
     }
   }
   
