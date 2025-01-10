@@ -340,13 +340,18 @@
   
   @media (max-width: 380px) {
     .hero-text img {
-      right: 3rem;
+      right: 0px;
     }
   }
   
   @media (max-width: 375px) {
     .hero-text img {
-      right: 1.7rem;
+      right: 0px;
+    }
+  }
+  @media (max-width: 355px) {
+    .hero-text img {
+      right: 0px;
     }
   }
   
