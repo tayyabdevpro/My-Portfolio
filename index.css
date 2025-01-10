@@ -326,7 +326,7 @@
   @media (max-width: 500px) {
     .hero-text img {
       top: 6.4rem;
-      right: 1.5rem;
+      right: 2rem;
       width: 4.5rem;
       height: 4.5rem;
     }
@@ -340,18 +340,18 @@
   
   @media (max-width: 380px) {
     .hero-text img {
-      right: 0px;
+      right: 0.1rem;
     }
   }
   
   @media (max-width: 375px) {
     .hero-text img {
-      right: 0px;
+      right: 0.1rem;
     }
   }
   @media (max-width: 355px) {
     .hero-text img {
-      right: 0px;
+      right: 0.1rem;
     }
   }
   
